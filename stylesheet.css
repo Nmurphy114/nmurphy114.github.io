@@ -5,7 +5,7 @@
 
 /* parallax header */
 .banner{
-    background-image: url("assets/Header_Mock-Up_Long.svg");
+    background-image: url("/assets/Header_Mock-Up_Long.svg");
 
     height:20vmax;
 
@@ -19,7 +19,7 @@
 /* mobile parallax header */
 @media screen and (max-width: 800px){
     .banner{
-        background-image: url("assets/Header_Mock-Up_Long.svg");
+        background-image: url("/assets/Header_Mock-Up_Long.svg");
     
         height:13vmax;
     
@@ -130,7 +130,7 @@ footer{
     font-family: 'Questrial', sans-serif;
     color: rgb(255, 255, 255);
 
-    background-image: url("assets/Gradient-BG.svg");
+    background-image: url("/assets/Gradient-BG.svg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
