@@ -4,7 +4,7 @@
 }
 
 /* parallax header */
-.banner{
+/* .banner{
     background-image: url("/assets/Header_Mock-Up_Long.svg");
 
     height:20vmax;
@@ -14,10 +14,10 @@
     background-position-x: -5px;
     background-repeat: no-repeat;
     background-size: 105%;
-}
+} */
 
 /* mobile parallax header */
-@media screen and (max-width: 800px){
+/* @media screen and (max-width: 800px){
     .banner{
         background-image: url("/assets/Header_Mock-Up_Long.svg");
     
@@ -29,7 +29,7 @@
         background-repeat: no-repeat;
         background-size: 100%;
     }
-}
+} */
 
 .container{
     height: 100%;
