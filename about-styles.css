@@ -40,10 +40,10 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
-        n n
-        h h;
+        "n n"
+        "p h"
+        "p t";
 }
-
 /* mobile/small window grid */
 @media screen and (max-width: 800px){
     .container{
@@ -53,7 +53,11 @@
         grid-gap: 20px;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        grid-template-areas: ;
+        grid-template-areas: 
+            "n"
+            "p"
+            "h"
+            "t";
     }
 }
 
@@ -71,6 +75,14 @@ header{
     padding-bottom: 30px;
 }
 
+.text{
+    grid-area: t;
+}
+
+.picture{
+    grid-area: p;
+    padding: 20px;
+}
 
 /* end grid */
 
@@ -83,9 +95,48 @@ footer{
     font-family: 'Questrial', sans-serif;
     color: rgb(255, 255, 255);
 
-    background-image: url("assets/Gradient-BG.svg");
+    background-image: url("/assets/Gradient-BG.svg");
     background-repeat: no-repeat;
     background-size: 100%;
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "f v p l";
+}
+
+/* footer grid */
+
+.footer-text{
+    grid-area: f;
+}
+
+.social-video{
+    grid-area: v;
+    width: 50px;
+}
+
+.social-resume{
+    grid-area: l;
+    width: 50px;
+    margin-right: 150px;
+}
+
+.social-pics{
+    grid-area: p;
+    width: 50px;
+}
+
+/* end grid */
+
+svg{
+    fill: white;
+}
+  
+svg:hover{
+    fill: rgb(255, 173, 21);
 }
 
 /* font styles */
