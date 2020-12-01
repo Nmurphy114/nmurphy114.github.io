@@ -3,15 +3,13 @@
     width: 65%;
     margin: 0 auto;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 10px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
         "n n"
-        "h h"
-        "a b"
-        "c d"
-        "e f";
+        "p h"
+        "p t";
 }
 /* mobile/small window grid */
 @media screen and (max-width: 800px){
@@ -24,13 +22,9 @@
         grid-template-rows: auto;
         grid-template-areas: 
             "n"
+            "p"
             "h"
-            "a"
-            "b"
-            "c"
-            "d"
-            "e"
-            "f";
+            "t";
     }
 }
 
@@ -48,36 +42,15 @@ header{
     padding-bottom: 30px;
 }
 
-.pic1{
-    grid-area: a;
+.text{
+    grid-area: t;
 }
 
-.pic1:hover, .pic1:active{
-    color: rgb(255, 173, 21);
-}
-
-.pic2{
-    grid-area: b;
-}
-
-.pic3{
-    grid-area: c;
-}
-
-.pic4{
-    grid-area: d;
-}
-
-.pic5{
-    grid-area: e;
-}
-
-.pic6{
-    grid-area: f;
-}
-
-.pic1, .pic2, .pic3, .pic4, .pic5, .pic6{
-    background-color: rgb(221, 221, 221);
+.picture{
+    grid-area: p;
+    margin-right: 50px;
+    padding: 20px;
+    background-color: rgba(178, 223, 211, 0.178);
 }
 
 /* end grid */

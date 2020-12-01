@@ -3,7 +3,7 @@
     width: 65%;
     margin: 0 auto;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 30px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
@@ -48,36 +48,28 @@ header{
     padding-bottom: 30px;
 }
 
-.pic1{
+.box1{
     grid-area: a;
 }
 
-.pic1:hover, .pic1:active{
-    color: rgb(255, 173, 21);
-}
-
-.pic2{
+.box2{
     grid-area: b;
 }
 
-.pic3{
+.box3{
     grid-area: c;
 }
 
-.pic4{
+.box4{
     grid-area: d;
 }
 
-.pic5{
+.box5{
     grid-area: e;
 }
 
-.pic6{
+.box6{
     grid-area: f;
-}
-
-.pic1, .pic2, .pic3, .pic4, .pic5, .pic6{
-    background-color: rgb(221, 221, 221);
 }
 
 /* end grid */
@@ -92,7 +84,7 @@ header{
     position: relative;
     text-align: center;
     cursor: default;
-  }
+}
   
 .hovereffect .overlay {
     width: 100%;
@@ -148,7 +140,7 @@ header{
     transition: all 0.4s ease-in;
     opacity: 0;
     filter: alpha(opacity=0);
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
     font-family: 'Work Sans', sans-serif;
     font-weight: 200;

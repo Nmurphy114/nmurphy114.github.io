@@ -3,11 +3,13 @@
     margin: 0;
 }
 
-/* parallax header */
+
 .banner{
     background-image: url("assets/Header_Mock-Up_Long.svg");
 
     height:20vmax;
+
+    padding-top: 0vh;
 
     background-attachment: fixed;
     background-position-y: -50px;
@@ -16,7 +18,7 @@
     background-size: 105%;
 }
 
-/* mobile parallax header */
+
 @media screen and (max-width: 800px){
     .banner{
         background-image: url("assets/Header_Mock-Up_Long.svg");
