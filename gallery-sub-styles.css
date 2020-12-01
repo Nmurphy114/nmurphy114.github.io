@@ -3,18 +3,16 @@
     width: 65%;
     margin: 0 auto;
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
         "n n"
         "h h"
-        "e e"
-        "x s"
-        "u w"
-        "i c";
+        "a b"
+        "c d"
+        "e f";
 }
-
 /* mobile/small window grid */
 @media screen and (max-width: 800px){
     .container{
@@ -24,16 +22,15 @@
         grid-gap: 20px;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        grid-template-areas:
-        "n"
-        "h"
-        "e"
-        "x"
-        "u"
-        "i"
-        "s"
-        "w"
-        "c";
+        grid-template-areas: 
+            "n"
+            "h"
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "f";
     }
 }
 
@@ -51,39 +48,36 @@ header{
     padding-bottom: 30px;
 }
 
-.education{
+.pic1{
+    grid-area: a;
+}
+
+.pic1:hover, .pic1:active{
+    color: rgb(255, 173, 21);
+}
+
+.pic2{
+    grid-area: b;
+}
+
+.pic3{
+    grid-area: c;
+}
+
+.pic4{
+    grid-area: d;
+}
+
+.pic5{
     grid-area: e;
 }
 
-.experience{
-    grid-area: x;
-    margin-top: 30px;
+.pic6{
+    grid-area: f;
 }
 
-.umass{
-    grid-area: u;
+.pic1, .pic2, .pic3, .pic4, .pic5, .pic6{
+    background-color: rgb(221, 221, 221);
 }
 
-.intro{
-    grid-area: i;
-}
-
-.skills{
-    grid-area: s;
-    margin-top: 30px;
-}
-
-.software{
-    grid-area: w;
-    margin-top: 30px;
-}
-
-.certifications{
-    grid-area: c;
-    margin-top: 30px;
-}
-
-.experience, .umass, .intro{
-    margin-right: 30px;
-}
 /* end grid */
