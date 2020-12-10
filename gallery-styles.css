@@ -73,6 +73,10 @@ header{
 
 /* end grid */
 
+.box1,.box2,.box3,.box4,.box5,.box6{
+    background-image: url(/assets/Gradient-BG.svg);
+}
+
 /* starter code */
 
 .hovereffect {
