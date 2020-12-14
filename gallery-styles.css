@@ -74,7 +74,7 @@ header{
 /* end grid */
 
 .box1,.box2,.box3,.box4,.box5,.box6{
-    background-image: url(/assets/Gradient-BG.svg);
+    background-image: url(/assets/Gradient-BG-Light.svg);
 }
 
 /* starter code */
@@ -120,6 +120,7 @@ header{
     text-align: center;
     position: center;
     font-size: 1em;
+    font-weight: 700;
     padding: 10px;
     font-family: 'Questrial', sans-serif;
     /* color:#FFA100; */
