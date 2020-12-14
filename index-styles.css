@@ -16,7 +16,7 @@
 }
 
 /* mobile/small window grid */
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1200px){
     .container{
         width: 85%;
         margin: 0 auto;
